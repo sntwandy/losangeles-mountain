@@ -1,0 +1,425 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap');
+
+/* Basics styles */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato',sans-serif;
+    overflow-x: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background-image: url('https://i.imgur.com/XOQGq2H.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero__saturation {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.hero__container {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.hero__logo {
+    margin-top: 20px;
+    width: 50px;
+}
+
+.hero__logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.hero__nav {
+    margin-top: 20px;
+}
+
+.hero__nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__nav-ul > li{
+    font-weight: 700;
+    text-decoration: underline;
+    margin-right: 40px;
+}
+
+.hero__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    font-family: 'Bebas', sans-serif;
+}
+
+.hero__title > span {
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family: 'Lato';
+}
+
+.hero__title > span:nth-of-type(2) {
+    color: #414f6b;
+}
+
+/* Sticky Nav */
+.sticky-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.stiky-nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky-nav__logo {
+    width: 45px;
+    margin-right: 5px;
+}
+
+.sticky-nav__logo > img {
+    border-radius: 50%;
+    border: 1px solid #bcc3c6;
+    width: 100%;
+}
+
+.stiky-nav__logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sticky-nav-letters {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Bebas', sans-serif;
+}
+
+.sticky-nav-letters span:nth-of-type(2) {
+    color: #414f6b;
+}
+
+.sticky-nav__ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-nav__ul > li {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.sticky-nav__ul > li > a {
+    color: #414f6b;
+}
+
+/* History */
+.history {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.imgur.com/uUYdtQf.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history__title > span:nth-of-type(1) {
+    font-size: 5em;
+    font-weight: bolder;
+    color: #414f6b;
+    opacity: 0.5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.history__title > span:nth-of-type(2) {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #414f6b;
+    font-family: 'Oswald', sans-serif;
+}
+
+.history__content {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* Carousel */
+.carousel {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px;
+    width: 100%;
+    height: 270px;
+    background-color: #37445b;
+}
+
+.carousel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+}
+
+.carousel-img {
+    width: 350px;
+}
+
+.carousel-indicators {
+    width: 300px;
+    margin: 0;
+}
+
+.slide {
+    width: 400px;
+}
+/* Team */
+.team {
+    width: 100vw;
+}
+
+.team__climb-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.team__climb > span:nth-of-type(1) {
+    font-size: 5em;
+    font-weight: bolder;
+    color: #414f6b;
+    opacity: 0.5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.team__climb > span:nth-of-type(2) {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #414f6b;
+    font-family: 'Oswald', sans-serif;
+}
+
+.team__climb-content {
+    width: 50%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.team__links {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #414f6b;
+}
+
+.team__links-container {
+    display: flex;
+    align-items: center;
+}
+.team__links-container > li:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: #bcc3c6;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.team__links-container > li:nth-of-type(1) > button {
+    border: none;
+    width: 140px;
+    background-color: transparent;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #414f6b;
+}
+
+.team__links-container > li:nth-of-type(2) {
+    font-weight: 700;
+    text-decoration: underline;
+    opacity: 0.5;
+    font-size: 1.2em;
+}
+
+.team__links-container > li:nth-of-type(2) > button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.team-schedule {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('https://i.imgur.com/txmPG4e.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team-schedule2 {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('https://i.imgur.com/Ohh8nVu.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.schedule {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.schedule-container {
+    position: absolute;
+    top: 120px;
+    left: 21%;
+    width: 400px;
+}
+
+.schedule-title > h3 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #414f6b;
+    text-transform: uppercase;
+}
+
+.noVisible {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 7vh;
+    background-color: #414f6b;
+}
+
+.footer-container {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+
+.footer__logo {
+    width: 50px;
+}
+
+.footer__logo > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.footer__content {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Medias Queries */
+
+@media screen and (max-width: 510px) {
+    .schedule {
+        left: 0%;
+    }
+
+    .schedule-container {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero__title > span {
+        font-size: 3em;
+    }
+
+    .team__climb-container {
+        display: block;
+        height: 250px;
+    }
+
+    .team__climb-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .stiky-nav__container {
+        display: block;
+    }
+
+    .footer {
+        height: 12vh;
+    }
+    .footer-container {
+        display: block;
+        height: 12vh;
+    }
+}
